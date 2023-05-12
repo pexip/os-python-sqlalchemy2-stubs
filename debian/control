@@ -1,0 +1,30 @@
+Source: python-sqlalchemy2-stubs
+Section: python
+Priority: optional
+Maintainer: Pexip AS <packaging@pexip.com>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3-setuptools,
+               python3-all
+Standards-Version: 4.5.1
+Homepage: http://www.sqlalchemy.org/
+Rules-Requires-Root: no
+Vcs-Browser: https://github.com/sqlalchemy/sqlalchemy2-stubs
+Vcs-Git: https://github.com/sqlalchemy/sqlalchemy2-stubs.git
+
+Package: python3-sqlalchemy2-stubs
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}, python3:any
+Conflicts: python3-types-sqlalchemy
+Breaks: python3-aqlalchemy (>= 2.0.0)
+Description: SQLAlchemy 2 Stubs (Legacy)
+ These are interim PEP-484 typing stubs for the SQLAlchemy 1.4 release series
+ only. They are released concurrently along with a Mypy extension which is
+ designed to work with these stubs, which assists primarily in the area of ORM
+ mappings.
+ .
+ The stubs replace the use of the "sqlalchemy-stubs" package published by
+ Dropbox. Differences include that these stubs are generated against 1.4's API
+ as well as some adjustments to the use of generics. The sqlalchemy2-stubs
+ stubs package will not work with SQLAlchemy 2.0, and will need to be
+ explicitly / manually uninstalled when upgrading to SQLAlchemy 2.0.

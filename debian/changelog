@@ -1,0 +1,5 @@
+python-sqlalchemy2-stubs (0.0.2a34-0pexip1) pexip; urgency=medium
+
+  * Prepare Pexip Packaging
+
+ -- Huw Jones <huw@pexip.com>  Fri, 12 May 2023 13:14:15 +0000
