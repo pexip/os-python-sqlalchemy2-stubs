@@ -1,0 +1,25 @@
+From 0cf8266b4f60f8750c2ae44aa2b7f9f4517c85ac Mon Sep 17 00:00:00 2001
+From: Huw Jones <huw@pexip.com>
+Date: Tue, 11 Jul 2023 10:36:43 +0100
+Subject: [PATCH] ext/mutable/MutableBase: fix coerce type Fixes #255
+
+---
+ sqlalchemy-stubs/ext/mutable.pyi | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/sqlalchemy-stubs/ext/mutable.pyi b/sqlalchemy-stubs/ext/mutable.pyi
+index e289eb6..6b0449c 100644
+--- a/sqlalchemy-stubs/ext/mutable.pyi
++++ b/sqlalchemy-stubs/ext/mutable.pyi
+@@ -11,7 +11,7 @@ from ..util import memoized_property as memoized_property
+ 
+ class MutableBase:
+     @classmethod
+-    def coerce(cls, key: Any, value: Any) -> None: ...
++    def coerce(cls, key: str, value: Any) -> Any: ...
+ 
+ class Mutable(MutableBase):
+     def changed(self) -> None: ...
+-- 
+2.39.2
+
