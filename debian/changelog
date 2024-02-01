@@ -1,3 +1,9 @@
+python-sqlalchemy2-stubs (0.0.2a34-0+pexip24u5) pexip-bookworm; urgency=medium
+
+  * New versioning scheme
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 01 Feb 2024 16:25:58 +0000
+
 python-sqlalchemy2-stubs (0.0.2a34-0pexip4) pexip-bookworm; urgency=medium
 
   * Bookworm build for product distribution
